@@ -1,0 +1,154 @@
+$dark-blue: #1e2b3d;
+$light-gray: #98a7ba;
+$light-gray-1: #eaecf1;
+$dark-gray: #323f50;
+$dark-gray-1: #f5f6fa;
+$dark-gray-2: #cccdd0;
+$white: #ffff;
+
+.sidebar-container {
+  background-color: $dark-blue;
+  min-width: 210px;
+  width: 15%;
+
+
+  .logo-container {
+    margin: 15px auto 45px;
+    text-align: center;
+    img {
+      width: 70%;
+    }
+  }
+  a {
+    color: $light-gray;
+    font-size: 0.8rem;
+    border-top: 1px solid $dark-gray;
+    border-radius: 0;
+    padding: 20px 12px;
+
+    &:last-child {
+      border-bottom: 1px solid $dark-gray;
+    }
+
+    .material-icons {
+      margin-right: 12px;
+    }
+  }
+}
+.navbar {
+  border-bottom: 1px solid $light-gray-1;
+  background-color: $white;
+  .navbar-brand {
+    color: $dark-gray-2;
+  }
+  .color-bark-blue {
+    color: $dark-blue;
+  }
+}
+
+.main-container {
+  width: 100%;
+  background: $dark-gray-1;
+  height: calc(100vh - 56px);
+  overflow: auto;
+
+  .selected-item {
+    margin: 0;
+    padding: 35px 30px 5px;
+    .selected-image-container {
+      padding: 0;
+
+      img {
+        object-fit: cover;
+      }
+    }
+    .selected-info-container {
+
+      .item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: $white;
+        height: calc(100% - 59px);
+
+        .total-price {
+          padding: 10px 30px;
+          border-bottom: 1px solid $light-gray-1;
+          .progress-bar-container {
+            background-color: #fef6f0;
+            height: 0.4rem;
+            margin-top: 10px;
+
+            .progress-bar {
+              background: linear-gradient(to right, #f67a2c 0%,#f9b254 100%);
+            }
+            .success-bar {
+              background: linear-gradient(to right, #429422 0%,#b1ec4e 100%);
+            }
+          }
+        }
+        .other-prices {
+          padding: 10px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .selected-card-title {
+    padding: 12px 20px;
+    background-color: $dark-blue;
+    color: $white;
+    line-height: 1;
+
+    h6 {
+      font-weight: 400;
+    }
+
+    span {
+      color: $light-gray;
+      font-size: 0.8rem;
+    }
+  }
+
+  .single-info-field {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid $light-gray-1;
+  }
+  .default-button {
+    font-size: 0.8rem;
+    background-color: #f67c31;
+    padding: 8px 30px;
+    color: $white;
+    border-radius: 0;
+    margin: 15px 0 25px;
+  }
+  .green-button {
+    background-color: #50b83d;
+  }
+  .other-info-field {
+    padding: 10px 20px;
+  }
+  .add-me-button {
+    background-color: $white;
+    color: #6dc056;
+    border: 1px solid #57d0ae;
+  }
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.fs-0-95 {
+  font-size: 0.95rem;
+}
